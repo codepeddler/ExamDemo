@@ -14,12 +14,16 @@ import com.migu.schedule.info.TaskInfo;
  */
 public class Schedule
 {
+    //定义节点注册队列
     private static List<Integer> nodeRegistrationQueue = new LinkedList<Integer>();
     
+    //定义任务挂起队列
     private static List<Integer> taskSuspendQueue = new LinkedList<Integer>();
     
+    //定义任务信息集合
     private static List<TaskInfo> taskInformationList = new ArrayList<TaskInfo>();
     
+    //定义任务资源消费集合
     private static Map<Integer, Integer> taskResourceConsum = new HashMap<Integer, Integer>();
     
     /**
